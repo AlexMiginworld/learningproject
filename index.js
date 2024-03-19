@@ -1,3 +1,3 @@
-function btnclick() {
+function btnСlick() {
     alert("Message");
 }
