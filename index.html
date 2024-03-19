@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>This is my first step here! Don't be shy!</h1>
 <noscript>JS not working</noscript>
+<button onclick="alert('You did it!!!!')">Click on me</button>
+<button onclick="btnClick()"> Try this one </button>
+<button ondblclick="btnClick2()"> Double click </button>
 
-<button onclick="alert('You did it!!!!')">Klick on me</button>
+<input type="text" oninput="userInput(this)">
+<div id="some-block"></div>
 
-<button onclick="btnClick()">Try this one</button>
+<form id="myform"> 
+    <input type="text" name="username" placeholder="Your name"><br>
+    <input type="email" name="email" placeholder="Your email"><br>
+    <input type="password" name="password" placeholder="Enter your password"><br>
+    <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <span id="error"></span>
+    <button>Submit</button>
+</form>
 
-<scripts src="index.js"></script>
+
+<script src="index.js"></script>
 </body>
 </html>

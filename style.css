@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(152, 181, 210);
+}
+
+input {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #123;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid red;
+}
