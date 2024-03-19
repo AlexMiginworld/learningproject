@@ -1,3 +1,3 @@
 function btnclick() {
-    alert( "Message" )
+    alert("Message");
 }
