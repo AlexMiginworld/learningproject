@@ -22,6 +22,7 @@ else if (el.value == 'background')
 }
 
 setInterval(function() {
+    let date = new Date();
 
 let block = document.getElementById("time");
 block.innerHTML = 'Date:' + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + date.getMonth() + "." + date.getDay();
