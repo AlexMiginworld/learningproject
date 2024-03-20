@@ -1,5 +1,9 @@
 document.getElementById('myform').addEventListener('submit', checkForm);
 
+let date = new Date();
+//date.setHours(23)
+console.log(date.getHours())
+
 function btnClick() {
     alert("Hello my little friend!");
 }
@@ -17,10 +21,14 @@ else if (el.value == 'background')
     el.style.backgroundColor = "#999"; 
 }
 
-let block = document.getElementById("some-block")
-block.innerHTML = 'Hello, <b>World!</b>';
-block.style.color = 'red' ;
-block.style.backgroundColor = '#123' ;
+setInterval(function() {
+
+let block = document.getElementById("time");
+block.innerHTML = 'Date:' + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + date.getMonth() + "." + date.getDay();
+block.style.color = '#87CEFA' ;
+block.style.backgroundColor = '#123';
+
+}, 1000)
 
 function checkForm() {
     let el = document.getElementById('myform');
